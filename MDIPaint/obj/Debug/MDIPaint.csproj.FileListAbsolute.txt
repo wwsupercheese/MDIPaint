@@ -1,0 +1,13 @@
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\bin\Debug\MDIPaint.exe.config
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\bin\Debug\MDIPaint.exe
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\bin\Debug\MDIPaint.pdb
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.csproj.AssemblyReference.cache
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.MainForm.resources
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.Properties.Resources.resources
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.csproj.GenerateResource.cache
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.csproj.CoreCompileInputs.cache
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.exe
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.pdb
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.AboutForm.resources
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.CanvasSizeForm.resources
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.DocumentForm.resources
