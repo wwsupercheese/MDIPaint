@@ -33,15 +33,18 @@
             // 
             // DocumentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DocumentForm";
             this.Text = "DocumentForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DocumentForm_FormClosing);
+            this.Load += new System.EventHandler(this.DocumentForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DocumentForm_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DocumentForm_MouseMove);
             this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.DocumentForm_MouseUp);

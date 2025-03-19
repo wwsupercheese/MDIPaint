@@ -13,13 +13,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace MDIPaint
 {
-    public partial class MainForm: Form
+    public partial class MainForm : Form
     {
         public static Color Color { get; set; }
-        public static int Width { get; set; }
+        public static new int Width { get; set; }
 
         private MdiLayout CurrectMdiLayout = MdiLayout.TileVertical;
         public MainForm()
@@ -27,15 +28,28 @@ namespace MDIPaint
             InitializeComponent();
             Color = Color.Black;
             UpdateColorIcon(Color);
+            DocumentForm temp = new DocumentForm();
+            SetBrushs(temp.GetBrushs());
+            temp.Dispose();
             Width = 3;
+            toolStripTextBoxBrushSize.Text = Width.ToString();
+            toolStripComboBoxBrushs.DropDownStyle = ComboBoxStyle.DropDownList;
         }
-
-
+        public string GetBrush()
+        {
+            return (string)toolStripComboBoxBrushs.SelectedItem;
+        }
+        private void SetBrushs(List<string> brs)
+        {
+            foreach (var br in brs)
+            {
+                toolStripComboBoxBrushs.Items.Add(br);
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -58,7 +72,7 @@ namespace MDIPaint
                 {
                     frm.bitmap = new Bitmap(temp); // Создаем копию в памяти
                 }
-                frm.fileName = filepath;
+                frm.filePath = filepath;
                 SetDocumentName(frm, Path.GetFileName(filepath)); // Используем Path
             }
             else if (MdiChildren.Length > 0)
@@ -83,12 +97,12 @@ namespace MDIPaint
                 int height = CSF.CanvasHeight;
 
                 if (ActiveMdiChild == null) return;
-                
+
                 var act = (DocumentForm)ActiveMdiChild;
                 var temp = new Bitmap(act.bitmap);
-                
+
                 act.bitmap = new Bitmap(width, height);
-                
+
                 for (int i = 0; i < temp.Width && i < act.bitmap.Width; i++)
                 {
                     for (int j = 0; j < temp.Height && j < act.bitmap.Height; j++)
@@ -143,7 +157,7 @@ namespace MDIPaint
             if (cd.ShowDialog() == DialogResult.OK)
             {
                 Color = cd.Color;
-                UpdateColorIcon(Color);
+                UpdateColorIcon(cd.Color);
             }
         }
 
@@ -159,13 +173,13 @@ namespace MDIPaint
             while (!stop)
             {
                 stop = true;
-                foreach(var doc in MdiChildren)
+                foreach (var doc in MdiChildren)
                 {
                     if (doc.Text == new_name)
                     {
                         count++;
-                        new_name = name.Split('.').Length > 1 ? 
-                            name.Split('.')[0] + "(" + count + ")." + name.Split('.')[1] : 
+                        new_name = name.Split('.').Length > 1 ?
+                            name.Split('.')[0] + "(" + count + ")." + name.Split('.')[1] :
                             name + "(" + count + ")";
                         stop = false;
                         continue;
@@ -175,15 +189,15 @@ namespace MDIPaint
 
             mydoc.Text = new_name;
         }
-        private void сохранитьКакToolStripMenuItem_Click(object sender, EventArgs e)
+        public bool сохранитьКак()
         {
-            if (ActiveMdiChild == null) return;
+            if (ActiveMdiChild == null) return false;
             var act = (DocumentForm)ActiveMdiChild;
 
             var bmp = act.bitmap;
 
             SaveFileDialog dlg = new SaveFileDialog();
-            dlg.FileName = act.fileName;
+            dlg.FileName = act.filePath;
             dlg.AddExtension = true;
             dlg.Filter = "Windows Bitmap (*.bmp)|*.bmp| Файлы JPEG (*.jpg)|*.jpg";
             ImageFormat[] ff = { ImageFormat.Bmp, ImageFormat.Jpeg };
@@ -197,30 +211,39 @@ namespace MDIPaint
                 {
                     bmp.Save(dlg.FileName, ff[dlg.FilterIndex - 1]);
                 }
-                
-                act.fileName = dlg.FileName;
+
+                act.filePath = dlg.FileName;
                 var directoryes = dlg.FileName.Split('\\');
                 SetDocumentName(act, directoryes[directoryes.Length - 1]);
+                act.changes = false;
+                return true;
             }
+            return false;
 
+        }
+        private void сохранитьКакToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            сохранитьКак();
         }
 
         private void файлToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
         {
             сохранитьКакToolStripMenuItem.Enabled = !(ActiveMdiChild == null);
 
-            сохранитьToolStripMenuItem.Enabled = !(ActiveMdiChild == null || ((DocumentForm)ActiveMdiChild).fileName == null);
+            сохранитьToolStripMenuItem.Enabled = !(ActiveMdiChild == null ||
+                ((DocumentForm)ActiveMdiChild).filePath == null);
         }
 
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        public void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (ActiveMdiChild == null || ((DocumentForm)ActiveMdiChild).fileName == null) return;
+            if (ActiveMdiChild == null || ((DocumentForm)ActiveMdiChild).filePath == null) return;
             var act = (DocumentForm)ActiveMdiChild;
 
             var bmp = act.bitmap;
 
-            bmp.Save(act.fileName);
+            bmp.Save(act.filePath);
 
+            act.changes = false;
         }
 
         private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -269,6 +292,65 @@ namespace MDIPaint
                 }
             }
             colorToolStripMenuItem.Image = bmp;
+        }
+
+        private void toolStripComboBoxBrushs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (var child in MdiChildren)
+            {
+                if (child is DocumentForm doc)
+                {
+                    doc.UpdateBrush();
+                    doc.UpdateCursor();
+                }
+            }
+            //this.Focus();
+        }
+
+        private void toolStripTextBoxBrushSize_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                Width = Convert.ToInt32(toolStripTextBoxBrushSize.Text);
+            }
+            catch
+            {
+                toolStripTextBoxBrushSize.Text = "3";
+                MessageBox.Show("Введите кооректный размер");
+            }
+        }
+
+        private void toolStripButtonFill_Click(object sender, EventArgs e)
+        {
+            bool currentState = toolStripButtonFill.Tag is bool flag && flag;
+
+            toolStripButtonFill.Tag = !currentState;
+
+            toolStripButtonFill.Text = (bool)toolStripButtonFill.Tag ? "Да" : "Нет";
+        }
+
+        public bool GetFill()
+        {
+            return toolStripButtonFill.Tag is bool flag && flag;
+        }
+
+        private void toolStripButtonScaleUp_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild == null) return;
+
+            var act = (DocumentForm)ActiveMdiChild;
+
+            act.ChangeScale(2);
+        }
+
+        private void toolStripButtonScaleDown_Click(object sender, EventArgs e)
+        {
+            if (ActiveMdiChild == null) return;
+
+            var act = (DocumentForm)ActiveMdiChild;
+
+            act.ChangeScale(0.5);
+
         }
     }
 }

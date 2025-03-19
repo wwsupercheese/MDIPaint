@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\",
+  "WorkspaceRootPath": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\\u0432\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\mdipaint\\mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\\u0432\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\mdipaint\\mdipaint\\documentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\vital\\source\\repos\\mdipaint\\mdipaint\\documentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\documentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\\u0432\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\mdipaint\\mdipaint\\documentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\documentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\vital\\source\\repos\\mdipaint\\mdipaint\\textform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\textform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\\u0432\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\mdipaint\\mdipaint\\canvassizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\canvassizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\vital\\source\\repos\\mdipaint\\mdipaint\\textform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\textform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\\u0432\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\mdipaint\\mdipaint\\canvassizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\canvassizeform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\vital\\source\\repos\\mdipaint\\mdipaint\\closedialogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\closedialogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|C:\\Users\\Vital\\source\\repos\\MDIPaint\\mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\vital\\source\\repos\\mdipaint\\mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,89 +34,90 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DocumentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\DocumentForm.cs",
-              "RelativeDocumentMoniker": "MDIPaint\\DocumentForm.cs",
-              "ToolTip": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\DocumentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "MDIPaint\\DocumentForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T09:47:28.099Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TextForm.cs",
+              "DocumentMoniker": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\TextForm.cs",
+              "RelativeDocumentMoniker": "MDIPaint\\TextForm.cs",
+              "ToolTip": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\TextForm.cs",
+              "RelativeToolTip": "MDIPaint\\TextForm.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA0wB8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T08:58:07.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TextForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\TextForm.cs",
+              "RelativeDocumentMoniker": "MDIPaint\\TextForm.cs",
+              "ToolTip": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\TextForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "MDIPaint\\TextForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T08:53:52.625Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CloseDialogForm.cs",
+              "DocumentMoniker": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\CloseDialogForm.cs",
+              "RelativeDocumentMoniker": "MDIPaint\\CloseDialogForm.cs",
+              "ToolTip": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\CloseDialogForm.cs",
+              "RelativeToolTip": "MDIPaint\\CloseDialogForm.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T08:06:44.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs",
+              "RelativeDocumentMoniker": "MDIPaint\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "MDIPaint\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T07:48:24.193Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "DocumentForm.cs",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\DocumentForm.cs",
+              "DocumentMoniker": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\DocumentForm.cs",
               "RelativeDocumentMoniker": "MDIPaint\\DocumentForm.cs",
-              "ToolTip": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\DocumentForm.cs",
+              "ToolTip": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\DocumentForm.cs",
               "RelativeToolTip": "MDIPaint\\DocumentForm.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAAAC8AAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAOYAAAAAAAAAAADwv/AAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T04:26:10.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs",
               "RelativeDocumentMoniker": "MDIPaint\\MainForm.cs",
-              "ToolTip": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs",
+              "ToolTip": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs",
               "RelativeToolTip": "MDIPaint\\MainForm.cs",
-              "ViewState": "AgIAAC4AAAAAYWZmZiYiwDkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T03:45:40.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs",
-              "RelativeDocumentMoniker": "MDIPaint\\MainForm.cs",
-              "ToolTip": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "MDIPaint\\MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T03:45:29.817Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CanvasSizeForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\CanvasSizeForm.cs",
-              "RelativeDocumentMoniker": "MDIPaint\\CanvasSizeForm.cs",
-              "ToolTip": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\CanvasSizeForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "MDIPaint\\CanvasSizeForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T04:27:42.472Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CanvasSizeForm.cs",
-              "DocumentMoniker": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\CanvasSizeForm.cs",
-              "RelativeDocumentMoniker": "MDIPaint\\CanvasSizeForm.cs",
-              "ToolTip": "C:\\Users\\\u0412\u0438\u0442\u0430\u043B\u0438\u0439\\source\\repos\\MDIPaint\\MDIPaint\\CanvasSizeForm.cs",
-              "RelativeToolTip": "MDIPaint\\CanvasSizeForm.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAMwBoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-15T04:58:23.526Z",
               "EditorCaption": ""
             }
           ]
