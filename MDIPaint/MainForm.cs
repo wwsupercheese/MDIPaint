@@ -186,7 +186,10 @@ namespace MDIPaint
                     }
                 }
             }
-
+            if (new_name != name)
+            {
+                mydoc.filePath = null;
+            }
             mydoc.Text = new_name;
         }
         public bool сохранитьКак()

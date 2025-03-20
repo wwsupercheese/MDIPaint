@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Diagnostics;
+using System.Drawing.Drawing2D;
 
 namespace MDIPaint
 {
@@ -55,7 +56,8 @@ namespace MDIPaint
             {
                 { "Линия", (g, e) => DrawLine(g, e) },
                 { "Элипс", (g, e) => DrawEllipse(g, e) },
-                { "Прямоугольник", (g, e) => DrawRectangle(g, e) }
+                { "Прямоугольник", (g, e) => DrawRectangle(g, e) },
+                { "Сердце", (g, e) => DrawHeart(g, e) }
             };
 
             actionsWithoutPreview = new Dictionary<string, DrawAction>
@@ -70,8 +72,11 @@ namespace MDIPaint
             {
                 { "Перо", Cursors.Cross },
                 { "Ластик", Cursors.No },
-                { "Ведро краски", Cursors.Hand }
+                { "Ведро краски", Cursors.Hand },
+                //{ "Текст", Cursors. }
+
             };
+            changes = false;
         }
 
         private void DocumentForm_MouseDown(object sender, MouseEventArgs e)
@@ -86,7 +91,6 @@ namespace MDIPaint
             changes = true;
             if (actionsWithoutPreview.ContainsKey(CurrentBrush))
             {
-                isDrawing = false;
                 using (Graphics g = Graphics.FromImage(bitmap))
                 {
                     actionsWithoutPreview[CurrentBrush](g, e);
@@ -209,22 +213,66 @@ namespace MDIPaint
 
         private void DrawFreehand(Graphics g, MouseEventArgs e)
         {
-            g.DrawLine(CurrentPen, lastPoint, e.Location);
-            lastPoint = e.Location;
+            var w = MainForm.Width;
+            var rect = new Rectangle(e.X - w / 2, e.Y - w / 2, w, w);
+            g.FillEllipse(new SolidBrush(CurrentPen.Color), rect);
         }
 
         private void DrawEraser(Graphics g, MouseEventArgs e)
         {
-            using (Pen eraserPen = new Pen(Color.White, MainForm.Width))
-            {
-                g.DrawLine(eraserPen, lastPoint, e.Location);
-            }
-            lastPoint = e.Location;
+            var w = MainForm.Width;
+            var rect = new Rectangle(e.X - w / 2, e.Y - w / 2, w, w);
+            g.FillEllipse(new SolidBrush(Color.White), rect);
         }
 
         private void DrawLine(Graphics g, MouseEventArgs e)
         {
             g.DrawLine(CurrentPen, lastPoint, e.Location);
+        }
+        
+        private void DrawHeart(Graphics g, MouseEventArgs e)
+        {
+            // Определяем границы области
+            var ax = Math.Min(e.X, lastPoint.X);
+            var bx = Math.Max(e.X, lastPoint.X);
+            var ay = Math.Min(e.Y, lastPoint.Y);
+            var by = Math.Max(e.Y, lastPoint.Y);
+
+            int width = bx - ax;
+            int height = by - ay;
+
+            // Верхняя начальная точка сердца
+            Point startTop = new Point(ax + width / 2, ay + height / 3);
+
+            // Контрольные точки для кривых
+            Point leftControl1 = new Point(ax, ay);
+            Point leftControl2 = new Point(ax, ay + height / 2);
+            Point rightControl1 = new Point(bx, ay);
+            Point rightControl2 = new Point(bx, ay + height / 2);
+            Point endBottom = new Point(ax + width / 2, by);
+
+            // Создаем путь для заливки
+            if (fill)
+            {
+                using (GraphicsPath path = new GraphicsPath())
+                {
+                    // Левая половина сердца
+                    path.AddBezier(startTop, leftControl1, leftControl2, endBottom);
+                    // Правая половина (обратный путь)
+                    path.AddBezier(endBottom, rightControl2, rightControl1, startTop);
+                    path.CloseFigure();
+
+                    // Заливаем цветом пера
+                    using (SolidBrush brush = new SolidBrush(CurrentPen.Color))
+                    {
+                        g.FillPath(brush, path);
+                    }
+                }
+            }
+
+            // Рисуем контур (всегда)
+            g.DrawBezier(CurrentPen, startTop, leftControl1, leftControl2, endBottom);
+            g.DrawBezier(CurrentPen, startTop, rightControl1, rightControl2, endBottom);
         }
 
         private void DrawEllipse(Graphics g, MouseEventArgs e)
@@ -238,7 +286,7 @@ namespace MDIPaint
 
         private void DrawText(Graphics g, MouseEventArgs e)
         {
-            
+            isDrawing = false;
             var tf = new TextForm();
             if (tf.ShowDialog() == DialogResult.OK)
             {
@@ -338,6 +386,7 @@ namespace MDIPaint
             bitmap = scaledBitmap;
             //Size = new Size(newWidth, newHeight);
             Invalidate();
+            changes = true;
         }
     }
 }
