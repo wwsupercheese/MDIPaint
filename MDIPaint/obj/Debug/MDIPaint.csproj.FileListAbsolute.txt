@@ -26,3 +26,5 @@ C:\Users\Vital\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.exe
 C:\Users\Vital\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.pdb
 C:\Users\Vital\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.CloseDialogForm.resources
 C:\Users\Vital\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.TextForm.resources
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.CloseDialogForm.resources
+C:\Users\Виталий\source\repos\MDIPaint\MDIPaint\obj\Debug\MDIPaint.TextForm.resources
