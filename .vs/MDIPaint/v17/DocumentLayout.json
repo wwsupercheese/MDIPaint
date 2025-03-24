@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|C:\\Users\\Vital\\source\\repos\\MDIPaint\\mdipaint\\documentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\vital\\source\\repos\\mdipaint\\mdipaint\\documentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\documentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\vital\\source\\repos\\mdipaint\\mdipaint\\canvassizeform.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|C:\\Users\\Vital\\source\\repos\\MDIPaint\\mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|C:\\Users\\Vital\\source\\repos\\MDIPaint\\mdipaint\\canvassizeform.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\canvassizeform.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\vital\\source\\repos\\mdipaint\\mdipaint\\aboutformcs.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|C:\\Users\\Vital\\source\\repos\\MDIPaint\\mdipaint\\aboutformcs.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\aboutformcs.resx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|c:\\users\\vital\\source\\repos\\mdipaint\\mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|solutionrelative:mdipaint\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F2A71312-FB23-4B94-BF73-60E584095424}|MDIPaint\\MDIPaint.csproj|C:\\Users\\Vital\\source\\repos\\MDIPaint\\mdipaint\\closedialogform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "CanvasSizeForm.resx",
               "DocumentMoniker": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\CanvasSizeForm.resx",
               "RelativeDocumentMoniker": "MDIPaint\\CanvasSizeForm.resx",
@@ -62,12 +62,11 @@
               "RelativeToolTip": "MDIPaint\\CanvasSizeForm.resx",
               "ViewState": "AgIAAAAAAAAAAAAAAAAmwA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-03-20T16:17:31.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T16:17:31.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "AboutFormcs.resx",
               "DocumentMoniker": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\AboutFormcs.resx",
               "RelativeDocumentMoniker": "MDIPaint\\AboutFormcs.resx",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "MDIPaint\\AboutFormcs.resx",
               "ViewState": "AgIAAFwAAAAAAAAAAAAmwHYAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-03-20T16:16:52.328Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-20T16:16:52.328Z"
             },
             {
               "$type": "Document",
@@ -115,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs",
               "RelativeDocumentMoniker": "MDIPaint\\MainForm.cs",
@@ -133,7 +131,7 @@
               "RelativeDocumentMoniker": "MDIPaint\\DocumentForm.cs",
               "ToolTip": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\DocumentForm.cs",
               "RelativeToolTip": "MDIPaint\\DocumentForm.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAjwNYAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAgwIQBAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T04:26:10.078Z",
               "EditorCaption": ""
@@ -146,7 +144,7 @@
               "RelativeDocumentMoniker": "MDIPaint\\MainForm.cs",
               "ToolTip": "C:\\Users\\Vital\\source\\repos\\MDIPaint\\MDIPaint\\MainForm.cs",
               "RelativeToolTip": "MDIPaint\\MainForm.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAEgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-15T03:45:40.035Z",
               "EditorCaption": ""
